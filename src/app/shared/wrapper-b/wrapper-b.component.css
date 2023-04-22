@@ -1,0 +1,27 @@
+.wrapper-container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 1rem;
+  padding-bottom: 0.2rem;
+}
+.line {
+  width: 30%;
+  background-color: rgba(240, 90, 34, 255);
+  height: 1.2rem;
+  border-radius: 11px;
+  position: absolute;
+  top: -0.6rem;
+  left: 35%;
+  box-shadow: 0 0rem 4rem 1rem rgba(242, 106, 56, 0.259);
+}
+
+h2 {
+  font-family: "mtavruli";
+}
+
+p {
+  font-size: 14px;
+}

@@ -62,6 +62,10 @@ Medium: 11px
   font-family: HelveticaNeue;
   src: url(assets/HelveticaNeue.ttc) format("truetype");
 }
+@font-face {
+  font-family: Mtavruli;
+  src: url(assets/mtavruli.ttf) format("truetype");
+}
 
 * {
   padding: 0;
