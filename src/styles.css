@@ -106,7 +106,8 @@ p {
 }
 
 .wrapper {
-  background-color: #232c2c;
+  background-color: #25292b;
+  /*color for big wrapper #232c2c; */
   border-radius: 11px;
   margin-left: 0;
   margin-right: 0;

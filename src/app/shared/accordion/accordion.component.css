@@ -1,12 +1,14 @@
+h3 {
+  margin-left: 0.3rem;
+}
 .accordion-item {
-  background-color: black !important;
+  background-color: #25292b !important;
   color: white;
 }
 
 /* Customize accordion headers */
 .accordion-header {
   border-radius: 11px;
-  background-color: black !important;
   border-color: transparent;
 }
 
@@ -16,19 +18,35 @@
   overflow: hidden;
   border: none;
 }
-.accordion-header button {
-  padding: 2rem 1rem;
-  background-color: rgba(45, 44, 44, 0.752);
+button {
+  padding: 1.5rem 2rem;
+  background-color: #25292b;
   color: white;
   border-color: transparent;
+  font-size: 14px;
 }
 .accordion-button:not(.collapsed) {
   box-shadow: none;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #25292b;
 }
 
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../../../assets/chevron-down-outline.svg");
+  background-size: 2rem;
+  width: 2rem;
+  height: 2rem;
+}
 .accordion-button.collapsed::after {
   background-image: url("../../../assets/chevron-down-outline.svg");
   background-size: 2rem;
   width: 2rem;
   height: 2rem;
+}
+
+.accordion-body {
+  padding: 2rem;
+  font-size: 14px;
 }
