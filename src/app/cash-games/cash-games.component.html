@@ -1,40 +1,16 @@
-<div class="wrapper cash-games-container">
-  <div class="line"></div>
-  <h2 class="pt-4 pb-4">1₾ რეიკი = 1 ქულას</h2>
-  <div class="leaderboard">
-    <h3>
-      ჰოლდემის TOP20 ლიდერბორდი
-      <img class="example-icon" src="assets/example-icon.png" alt="" />
-    </h3>
+<app-wrapper-a>
+  <h3 class="pt-4 pb-4" heading>1₾ რეიკი = 1 ქულას</h3>
 
-    <div class="row">
-      <app-leaderboard-table class="mb-2"></app-leaderboard-table>
-    </div>
+  <h4>
+    ჰოლდემის TOP20 ლიდერბორდი
+    <img class="example-icon" src="assets/example-icon.png" alt="" />
+  </h4>
 
-    <div class="container">
-      <div class="row wrapper prizes">
-        <app-custom-row>
-          <img src="assets/travel-icon-sm.png" alt="" />
-
-          <p>The Festival in Malta-ს საგზური</p>
-        </app-custom-row>
-        <app-custom-row>
-          <img src="assets/ticket-icon-sm.png" alt="" />
-          <p>
-            სპეციალური ტურნირის „Cashgame Sharks„ ბილეთი, სადაც გათამაშდება
-            <span class="new-line"> The Festival in Malta-ს საგზური </span>
-          </p>
-        </app-custom-row>
-        <app-custom-row>
-          <div class="icondiv"></div>
-          <p>ტექნიკის მაღაზიის ვაუჩერი</p>
-        </app-custom-row>
-      </div>
-      <div class="row mt-4">
-        <div class="flex-center">
-          <p>* ლიდერბორდის შედეგები განახლდება <a href="">პოკერის ლობიში</a></p>
-        </div>
-      </div>
-    </div>
+  <div class="row">
+    <app-leaderboard-table class="mb-2"></app-leaderboard-table>
   </div>
-</div>
+
+  <div class="container">
+    <app-prizes></app-prizes>
+  </div>
+</app-wrapper-a>

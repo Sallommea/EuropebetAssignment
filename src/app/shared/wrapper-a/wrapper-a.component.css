@@ -1,0 +1,38 @@
+.wrapper-container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.2rem;
+  padding-bottom: 0.2rem;
+  background-color: #232c2c;
+}
+.line {
+  width: 30%;
+  background-color: rgba(240, 90, 34, 255);
+  height: 1.2rem;
+  border-radius: 11px;
+  position: absolute;
+  top: -0.6rem;
+  left: 35%;
+  box-shadow: 0 0rem 4rem 1rem rgba(242, 106, 56, 0.259);
+}
+
+.leaderboard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.454);
+  padding: 2rem 2rem;
+  width: 100%;
+  gap: 2rem;
+  border-right: solid #232c2c 0.1rem;
+  border-bottom: solid #232c2c 0.1rem;
+  border-left: solid #232c2c 0.1rem;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+}

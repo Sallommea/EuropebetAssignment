@@ -1,8 +1,96 @@
-<div class="wrapper spring-series-container">
-  <div class="line"></div>
-  <h2>1ლ რეიკი = 1 ქულას</h2>
-  <div class="leaderboard">
-    <h3>ჰოლდემის TOP20 ლიდერბორდი</h3>
-    <app-leaderboard-table></app-leaderboard-table>
+<div class="mb-5">
+  <app-wrapper-a>
+    <h3 class="pt-4 pb-4" heading>ტურნირები და სატელიტები</h3>
+    <div class="flex-center column">
+      <h3 class="mb-4">სერიის ფარგლებში, ყოველდღიურად გაიმართება 3 ივენთი:</h3>
+      <div class="event-time mb-4">
+        <div class="icon"></div>
+        <img class="icon-img" src="../../assets/time-outline.svg" alt="" />
+        <span>19:00 / </span>
+        <span>19:30 / </span>
+        <span>20:00 </span>
+      </div>
+      <p class="mb-4 p-font-color">
+        * ყველა ტურნირზე მოხვედრა შესაძლებელია 0 ლარიდან
+      </p>
+      <div class="full-schedule flex-center mb-4">
+        <p class="p-font-color mb-2">
+          ტურნირების სრული განრიგის სანახავად გადადი
+        </p>
+        <p class="p-font-color">პოკერის ლობიში</p>
+      </div>
+      <app-button>პოკერის ლობი</app-button>
+    </div>
+    <img class="promo-left-img" src="../../assets/promo-left-img.png" alt="" />
+    <img
+      class="promo-right-img"
+      src="../../assets/promo-right-img.png"
+      alt=""
+    />
+  </app-wrapper-a>
+</div>
+
+<app-wrapper-a>
+  <h3 class="pt-4 pb-4" heading>
+    მოხვდი TOP20 ლიდერბორდში ტურნირებზე დაგროვებული ქულებით
+  </h3>
+
+  <div class="collecting-scores flex-center column">
+    <p class="mechanic-p">ქულების დაგროვების მექანიკა</p>
+    <img class="mechanic-icon" src="../../assets/mechanic-icon.png" alt="" />
+  </div>
+  <div class="row">
+    <app-leaderboard-table class="mb-2"></app-leaderboard-table>
+  </div>
+
+  <div class="container">
+    <app-prizes>
+      <p>
+        * სატურნირო ლიდერბორდის ქულების დათვლაში არ მონაწილეობს ფრიროლები და
+        სატელიტები
+      </p>
+    </app-prizes>
+  </div>
+</app-wrapper-a>
+<div class="wrapper-simple mt-4">
+  <h3 class="mb-5">ყოველდღიური ტურნირები და სატელიტები</h3>
+
+  <div class="row gap-4 flex-center">
+    <div class="col-lg-6 col-md-6 col-sm-6 tournament-img">
+      <div class="start column">
+        <h4>Holdem Highrollers</h4>
+        <h2 class="mt-2">50 000 ₾</h2>
+      </div>
+      <div class="end column">
+        <h5>ბაი-ინი - 500₾</h5>
+        <div class="tournament-date">
+          <h4>28 აპრილი</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 tournament-img">
+      <div class="start column">
+        <h4>Holdem Highrollers</h4>
+        <h2 class="mt-2">50 000 ₾</h2>
+      </div>
+      <div class="end column">
+        <h5>ბაი-ინი - 500₾</h5>
+        <div class="tournament-date">
+          <h4>28 აპრილი</h4>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 tournament-img-bg">
+      <div class="main-events column">
+        <h2 class="mb-3">Main Events</h2>
+        <h2 class="main-events-color mt-2">150 000 ₾</h2>
+      </div>
+      <div class="end-bg column">
+        <h4 class="mb-3">ბაი-ინი - 500₾</h4>
+        <div class="tournament-date-bg">
+          <h4>28 აპრილი</h4>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

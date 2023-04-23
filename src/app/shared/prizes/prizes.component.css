@@ -3,9 +3,8 @@
   height: 1rem;
   background-color: beige;
 }
-h3 {
-  
-  font-family: "Mtavruli";
+h2 {
+  font-weight: 600;
 }
 
 p {
@@ -29,4 +28,12 @@ p {
 }
 a {
   color: rgba(240, 90, 34, 255);
+}
+
+.flex-center {
+  flex-direction: column;
+}
+
+.p-font-color {
+  color: #ffffffa3;
 }

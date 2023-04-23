@@ -2,6 +2,9 @@
   position: relative;
   overflow: hidden;
 }
+h3 {
+  font-family: "Mtavruli";
+}
 
 .line {
   width: 30%;
@@ -12,4 +15,152 @@
   top: -0.6rem;
   left: 35%;
   box-shadow: 0 0rem 4rem 1rem rgba(242, 106, 56, 0.328);
+}
+.column {
+  flex-direction: column;
+}
+
+.event-time {
+  border: solid 0.2rem rgba(240, 90, 34, 255);
+  box-shadow: 0 0rem 4rem 1rem rgba(242, 106, 56, 0.209);
+  border-radius: 11px;
+  padding: 1rem 5rem;
+  padding-right: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.icon {
+  width: 6rem;
+  height: 6rem;
+  left: -2rem;
+  top: -1.2rem;
+  background-color: rgba(240, 90, 34, 255);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 0;
+}
+.icon-img {
+  position: absolute;
+  width: 2.5rem;
+  z-index: 6000000;
+  top: 0.4rem;
+  left: 0.6rem;
+}
+.promo-left-img {
+  position: absolute;
+  width: 20rem;
+  left: 0;
+  bottom: 0;
+}
+
+.promo-right-img {
+  position: absolute;
+  width: 20rem;
+  height: 13.989rem;
+  right: 0;
+  bottom: 0;
+}
+span {
+  font-size: 14px;
+  font-weight: 600;
+}
+.p-font-color {
+  color: #ffffffa3;
+}
+.mechanic-p {
+  line-height: 1.2rem;
+  font-family: "HelveticaNeue";
+  font-size: 12px;
+  color: #ffffffd9;
+}
+
+.collecting-scores {
+  padding: 1.2rem 4rem;
+  padding-left: 3rem;
+  background-color: #1e2122c7;
+  border: solid #232c2c 0.2rem;
+  border-radius: 16px;
+  position: relative;
+}
+
+.mechanic-icon {
+  position: absolute;
+  right: -2.8rem;
+  height: 4.5rem;
+}
+
+.tournament-img {
+  background-image: url("../../assets/tournament-bg2.png");
+  width: 39.5rem;
+  height: 11rem;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tournament-img-bg {
+  background-image: url("../../assets/main-bg.png");
+  width: 80.7rem;
+  height: 11rem;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.row > * {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.start {
+  margin-left: 3rem;
+}
+.end {
+  margin-right: 8rem;
+  display: flex;
+}
+.end-bg {
+  margin-right: 8rem;
+  display: flex;
+}
+
+.tournament-date {
+  background-color: #b47c3c;
+  padding: 0.5rem 2rem;
+  border-radius: 11px;
+  border-bottom-right-radius: 0;
+}
+.tournament-date-bg {
+  background-color: #cec461;
+  padding: 0.8rem 3rem;
+  border-radius: 16px;
+  border-bottom-right-radius: 0;
+  color: #245b42;
+}
+
+h4 {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+h5 {
+  display: flex;
+  justify-content: center;
+}
+
+.start h2 {
+  color: #f3b507;
+  font-weight: 700;
+}
+
+.main-events h2 {
+  font-weight: 700;
+}
+.main-events-color {
+  color: #f3b507;
 }

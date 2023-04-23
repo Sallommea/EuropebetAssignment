@@ -23,7 +23,7 @@
   /* background: #232c2c; background for next part*/
   background: #1c1d1e;
   border-radius: 18px;
-  /* overflow: hidden; */
+  overflow: hidden;
   position: relative;
 }
 .modal-header--sticky {
@@ -109,10 +109,15 @@
 .footer {
   border-top: 0.5rem solid;
   border-color: rgba(240, 90, 34, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: sticky;
+  bottom: 0;
+  background-color: transparent; /* [1] */
+  z-index: 0; /* [2] */
+}
+
+.background-color {
   background-color: rgba(23, 23, 24, 255);
+  width: 100%;
 }
 
 .hidden {
@@ -205,4 +210,7 @@ p {
     opacity: 1;
     top: 25px;
   }
+}
+
+footer {
 }
