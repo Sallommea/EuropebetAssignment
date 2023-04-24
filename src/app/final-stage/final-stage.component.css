@@ -1,15 +1,67 @@
-.spring-series-container {
-  position: relative;
-  overflow: hidden;
+.final-info-img {
+  border-radius: 16px;
+  width: 100%;
+}
+h4 {
+  margin-bottom: 0;
+  font-weight: 600;
+  color: #ffffffe7;
+  font-size: 1.4rem;
+  letter-spacing: 0.75px;
+}
+h5 {
+  font-family: "Mtavruli";
+  font-size: 1.4rem;
+  letter-spacing: 0.75px;
+  font-weight: 600;
+}
+.smaller-h5 {
+  font-family: "HelveticaNeue";
+}
+.wrapper-simple {
+  padding: 2rem 2rem;
+  font-family: "HelveticaNeue";
+}
+.row {
+  padding: 0;
+  margin: 0;
 }
 
-.line {
-  width: 30%;
-  background-color: rgba(240, 90, 34, 255);
-  height: 1.2rem;
+.container-custom {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  align-items: stretch;
+}
+
+.card-custom {
+  background-color: #eee;
+  padding: 20px;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.card-row {
+  background-color: #14161690;
+  width: 110%;
   border-radius: 11px;
-  position: absolute;
-  top: -0.6rem;
-  left: 35%;
-  box-shadow: 0 0rem 4rem 1rem rgba(242, 106, 56, 0.328);
+  font-weight: 600;
+  padding: 1.5rem 0.4rem;
+  padding-right: 2.2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card-row p {
+  color: #ffffffe4;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
 }

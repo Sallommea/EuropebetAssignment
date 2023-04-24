@@ -14,10 +14,14 @@
 .orange-line {
   width: 1rem;
   background-color: rgba(240, 90, 34, 255);
-  height: 70%;
+  /* height: 70%; */
   border-radius: 11px;
   position: absolute;
   left: -0.5rem;
   /* left: 35%; */
   box-shadow: 0 0rem 4rem 1rem rgba(242, 106, 56, 0.143);
+}
+
+.backgroundColor {
+  background-color: #232c2c;
 }

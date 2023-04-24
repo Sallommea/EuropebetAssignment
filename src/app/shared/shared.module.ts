@@ -10,6 +10,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { ButtonComponent } from './button/button.component';
 import { WrapperAComponent } from './wrapper-a/wrapper-a.component';
 import { PrizesComponent } from './prizes/prizes.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { PrizesComponent } from './prizes/prizes.component';
     ButtonComponent,
     WrapperAComponent,
     PrizesComponent,
+    CardComponent,
   ],
   imports: [CommonModule, BrowserModule],
   exports: [
@@ -32,6 +34,7 @@ import { PrizesComponent } from './prizes/prizes.component';
     ButtonComponent,
     WrapperAComponent,
     PrizesComponent,
+    CardComponent,
   ],
 })
 export class SharedModule {}

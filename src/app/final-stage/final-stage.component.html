@@ -1,8 +1,48 @@
-<div class="wrapper spring-series-container">
-  <div class="line"></div>
-  <h2>1ლ რეიკი = 1 ქულას</h2>
-  <div class="leaderboard">
-    <h3>ჰოლდემის TOP20 ლიდერბორდი</h3>
-    <app-leaderboard-table></app-leaderboard-table>
+<div class="wrapper-simple flex-center column">
+  <img
+    class="mb-5 final-info-img"
+    src="../../assets/final-info-img.jpg"
+    alt=""
+  />
+  <h5 class="mb-4">გაემგზავრე POKER LEGENDS PHILIPINNES-ზე!</h5>
+  <h5 class="smaller-h5">
+    Poker Legends სერიების ფარგლებში, ევროპაბეთი უკვე მეორედ აძლევს პოკერის
+    მოთამაშეებს
+  </h5>
+  <h5 class="smaller-h5 mb-5">დაუვიწყარი მოგზაურობის შანსს</h5>
+  <app-custom-row class="mb-5" [backgroundCustomColor]="true" [height]="'60%'">
+    <h4>
+      15-დან 21 მაისის ჩათვლით მალტა პოკერის ფესტივალს უმასპინძლებს
+    </h4></app-custom-row
+  >
+
+  <div class="container container-custom">
+    <app-card>
+      <h6 class="mb-4 mt-3" heading>A კატეგორიის საგზურში შედის</h6>
+      <div class="row card-row" *ngFor="let item of cardContent">
+        <div class="col-2">
+          <img [src]="item.src" alt="" />
+        </div>
+        <p class="col-10">{{ item.content }}</p>
+      </div>
+    </app-card>
+    <app-card>
+      <h6 class="mb-4 mt-3" heading>B კატეგორიის საგზურში შედის</h6>
+      <div class="row card-row" *ngFor="let item of cardContent">
+        <div class="col-2">
+          <img [src]="item.src" alt="" />
+        </div>
+        <p class="col-10">{{ item.content }}</p>
+      </div>
+    </app-card>
+    <app-card>
+      <h6 class="mb-4 mt-3" heading>C კატეგორიის საგზურში შედის</h6>
+      <div class="row card-row" *ngFor="let item of cardContentThird">
+        <div class="col-2">
+          <img [src]="item.src" alt="" />
+        </div>
+        <p class="col-10">{{ item.content }}</p>
+      </div>
+    </app-card>
   </div>
 </div>

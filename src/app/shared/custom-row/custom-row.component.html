@@ -1,4 +1,7 @@
-<div class="container-row">
-  <div class="orange-line"></div>
+<div
+  class="container-row"
+  [ngClass]="{ backgroundColor: backgroundCustomColor }"
+>
+  <div class="orange-line" [ngStyle]="{ height: height }"></div>
   <ng-content></ng-content>
 </div>

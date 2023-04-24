@@ -67,6 +67,10 @@ Medium: 11px
   src: url(assets/mtavruli.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: Sylfaen;
+  src: url(assets/Sylfaen.ttf) format("truetype");
+}
 * {
   padding: 0;
   margin: 0;
@@ -163,7 +167,9 @@ p {
   justify-content: center;
   align-items: center;
 }
-
+.column {
+  flex-direction: column;
+}
 p {
   margin-bottom: 0;
 }

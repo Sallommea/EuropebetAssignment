@@ -212,5 +212,26 @@ p {
   }
 }
 
-footer {
+/* .modal {
+  height: 100vh;
+  width: 100%;
+} */
+
+/*
+
+
+::-webkit-scrollbar {
+  width: 0.3vw; /* Remove scrollbar space */
+/*
+  background: transparent; /* Optional: just make scrollbar invisible */
+/*
 }
+
+*/
+/* .footer {
+  height: 20vh;
+}
+.modal-body {
+  height: 60vh;
+  overflow-y: auto;
+} */
