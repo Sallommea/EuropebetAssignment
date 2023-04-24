@@ -65,3 +65,50 @@ h6 {
   font-weight: 400;
   letter-spacing: 0.5px;
 }
+
+h2 {
+  font-family: "Mtavruli";
+}
+.container {
+  --bs-gutter-x: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  width: 100%;
+}
+
+.first-column {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+  position: relative;
+  border-radius: 11px;
+  font-weight: 600;
+}
+.ticket-p {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+.ticket-h4 {
+  font-size: 16px;
+}
+.second-column {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+  position: relative;
+  border-radius: 11px;
+}
+
+.multiline {
+  font-size: 12px;
+  color: #d0d0d0;
+}
+.multiline p {
+  display: block;
+}

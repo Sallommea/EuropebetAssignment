@@ -47,6 +47,32 @@ export class FinalStageComponent implements OnInit {
       content: '€500 სახარჯი ფული',
     },
   ];
+
+  travelCard = [
+    { img1: true, h3: '"Cashgame HighRollers"-', p: '1 საგზური' },
+    { img1: true, h3: '"Cashgame Grinders"-', p: '1 საგზური' },
+    { img1: true, h3: '"Cashgame Sharks"-', p: '1 საგზური' },
+  ];
+
+  travelCardSecond = [
+    {
+      img1: false,
+      h3: 'Poker Legends Philippines',
+      p: 'A კატეგორიის 1 საგზური',
+      p2: 'B კატეგორიის 1 საგზური',
+      p3: 'ტურნირში მონაწილეობის მიღება შეუძლია',
+      p4: 'ნებისმიერ მსურველს 165₾ ბაი-ინის გადახდით.',
+    },
+    {
+      img1: true,
+      h3: 'The Lord of the Rings',
+      p: 'C კატეგორიის 1 საგზური',
+      p2: '',
+      p3: 'ტურნირში მონაწილეობის მიღება შეუძლია',
+      p4: 'ნებისმიერ მსურველს 165₾ ბაი-ინის გადახდით.',
+    },
+  ];
+
   constructor() {}
 
   ngOnInit(): void {}

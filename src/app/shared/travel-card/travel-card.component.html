@@ -1,0 +1,16 @@
+<div class="travel-card">
+  <ng-content select="[heading]"></ng-content>
+  <ng-content></ng-content>
+  <img
+    *ngIf="imageFirst"
+    class="poker-ticket"
+    src="../../../assets/poker-item-1-ticket-icon.png"
+    alt=""
+  />
+  <img
+    *ngIf="!imageFirst"
+    class="poker-ticket"
+    src="../../../assets/poker-item-2-ticket-icon.png"
+    alt=""
+  />
+</div>

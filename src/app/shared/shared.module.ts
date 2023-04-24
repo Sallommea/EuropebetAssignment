@@ -11,6 +11,7 @@ import { ButtonComponent } from './button/button.component';
 import { WrapperAComponent } from './wrapper-a/wrapper-a.component';
 import { PrizesComponent } from './prizes/prizes.component';
 import { CardComponent } from './card/card.component';
+import { TravelCardComponent } from './travel-card/travel-card.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { CardComponent } from './card/card.component';
     WrapperAComponent,
     PrizesComponent,
     CardComponent,
+    TravelCardComponent,
   ],
   imports: [CommonModule, BrowserModule],
   exports: [
@@ -35,6 +37,7 @@ import { CardComponent } from './card/card.component';
     WrapperAComponent,
     PrizesComponent,
     CardComponent,
+    TravelCardComponent,
   ],
 })
 export class SharedModule {}
