@@ -1,7 +1,7 @@
 <div class="modal-backdrop fade show"></div>
 
 <div
-  class="modal fade show"
+  class="modal"
   id="exampleModal"
   tabindex="-1"
   aria-labelledby="exampleModalLabel"
@@ -45,6 +45,7 @@
                 routerLinkActive="active"
                 [routerLinkActiveOptions]="{ exact: true }"
                 class="cash-games"
+                (click)="showComponent()"
                 ><span>1-29 აპრილი </span
                 ><span class="stage">Cash Games</span></a
               >
@@ -52,6 +53,7 @@
                 routerLink="springseries"
                 routerLinkActive="active"
                 class="spring-series"
+                (click)="showComponent()"
                 ><span>13-29 აპრილი</span>
                 <span class="stage">Spring Series</span></a
               >
@@ -59,6 +61,7 @@
                 routerLink="finalstage"
                 routerLinkActive="active"
                 class="final-stage"
+                (click)="hideComponent()"
                 ><span>30 აპრილი</span>
                 <span class="stage"> Final Stage</span></a
               >
@@ -67,7 +70,7 @@
 
           <router-outlet> </router-outlet>
 
-          <div class="row mb-5 mt-5">
+          <div class="row mb-5 mt-5" *ngIf="show">
             <app-wrapper-b></app-wrapper-b>
           </div>
           <div class="row mb-5">
@@ -78,11 +81,11 @@
           </div>
         </div>
       </div>
+      <footer class="footer">
+        <div class="background-color flex-center">
+          <app-button class="mb-5 mt-5">ითამაშე</app-button>
+        </div>
+      </footer>
     </div>
-    <footer class="footer">
-      <div class="background-color flex-center">
-        <app-button class="mb-5 mt-5">ითამაშე</app-button>
-      </div>
-    </footer>
   </div>
 </div>

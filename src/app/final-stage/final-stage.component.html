@@ -47,7 +47,7 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container mb-5">
   <app-wrapper-a>
     <h2 class="pb-4 pt-4" heading>
       მოიგე საგზური 30 აპრილის ფინალურ ტურნირებზე
@@ -82,6 +82,29 @@
     <div class="flex-center column multiline">
       <p>* ტურნირზე მონაწილეობის მიღება შეუძლია ნებისმიერ მსურველს 165₾-იანი</p>
       <p>ბაი-ინის გადახდით</p>
+    </div>
+  </app-wrapper-a>
+</div>
+<div class="mb-5">
+  <app-wrapper-a>
+    <h2 class="pt-4 pb-4" heading>1₾ რეიკი = 1 ქულას</h2>
+
+    <h4>
+      მოთამაშეები გარკვეული საპრიზო ადგილების დაკავების შემთხვევაში მიიღებენ
+      საიდუმლო გასაღებს
+    </h4>
+
+    <div class="container">
+      <div class="wrapper">
+        <div class="table-body-container">
+          <div class="tb-row mt-1 mb-1" *ngFor="let data of keyData">
+            <p class="place-circle">{{ data.id }}</p>
+            <p class="content-key-section">
+              {{ data.prize }}
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </app-wrapper-a>
 </div>
