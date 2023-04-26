@@ -5,13 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
-export class HomeComponent implements OnInit {
-  showModal = true;
-  constructor() {}
-
-  ngOnInit(): void {}
+export class HomeComponent {
+  showModal = false;
 
   openModal() {
     this.showModal = true;
+  }
+  closeModal() {
+    this.showModal = !this.showModal;
   }
 }

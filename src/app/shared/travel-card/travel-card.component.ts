@@ -5,9 +5,6 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './travel-card.component.html',
   styleUrls: ['./travel-card.component.css'],
 })
-export class TravelCardComponent implements OnInit {
+export class TravelCardComponent {
   @Input() imageFirst: boolean | undefined = true;
-  constructor() {}
-
-  ngOnInit(): void {}
 }

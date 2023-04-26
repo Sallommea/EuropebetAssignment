@@ -1,54 +1,49 @@
 <div class="wrapper">
-  <div class="row">
-    <div class="col-lg-4 col-md-4 col-sm-4 table-head table--head-1 color">
-      ადგილი
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 table-head table--head-2 color">
+  <div class="grid head">
+    <div class="column-grid table-head table--head-1 color">ადგილი</div>
+    <div class="columng-grid table-head table--head-2 color">
+      <img src="../../../assets/gift-outline.svg" class="gift-img" alt="" />
       ვაუჩერი
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-4 table-head table--head-3 color">
-      პრიზი
-    </div>
+    <div class="columng-grid table-head table--head-3 color">პრიზი</div>
   </div>
   <div class="table-body-container">
-    <div class="row tb-row mt-1 mb-1">
-      <div
-        class="col-lg-4 col-md-4 col-sm-4 col-sm-4 col-xs-4 table-head table--tb-1"
-      >
+    <div class="grid tb-row mt-1 mb-1">
+      <div class="column-grid table-head table--tb-1">
         <div class="place-circle">1</div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 table-head table--tb-2">
+      <div class="column-grid table-head table--tb-2">
         <img src="assets/remove-outline.svg" alt="" />
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 table-head table--tb-3">
-        <img src="assets/travel-icon-sm.png" alt="" />
-        <p>A კატეგორიის საგზური</p>
+      <div class="column-grid table-head table--tb-3">
+        <img class="hide-icon" src="assets/travel-icon-sm.png" alt="" />
+        A კატეგორიის საგზური
       </div>
     </div>
-    <div class="row tb-row mt-1 mb-1">
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 table-head table--tb-1">
+    <div class="grid tb-row mt-1 mb-1">
+      <div class="column-grid table-head table--tb-1">
         <div class="place-circle">2</div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 table-head table--tb-2">
+      <div class="column-grid table-head table--tb-2">
         <img src="assets/remove-outline.svg" alt="" />
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 table-head table--tb-3">
-        <img src="assets/ticket-icon-sm.png" alt="" />
-        <p>B კატეგორიის საგზური</p>
+      <div class="column-grid table-head table--tb-3">
+        <img class="hide-icon" src="assets/ticket-icon-sm.png" alt="" />
+        B კატეგორიის საგზური
       </div>
     </div>
-    <div class="row tb-row mt-1 mb-1" *ngFor="let data of data">
-      <div class="col-lg-4 col-md-4 col-sm-4 table-head table--tb-1">
+    <div class="grid tb-row mt-1 mb-1" *ngFor="let data of data">
+      <div class="column-grid table-head table--tb-1">
         <div class="place-circle">
           {{ data.place }}
         </div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 table-head table--tb-2">
+      <div class="column-grid table-head table--tb-2">
         <div class="voucher">
           {{ data.voucher }}
         </div>
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 table-head table--tb-3">
+      <div class="column-grid table-head table--tb-3 ml-5">
         {{ data.prize }}
       </div>
     </div>

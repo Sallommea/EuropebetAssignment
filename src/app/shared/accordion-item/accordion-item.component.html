@@ -1,0 +1,17 @@
+<div class="accordion-item mb-3" (click)="show()">
+  <h2 class="accordion-header">
+    <button
+      class="accordion-button"
+      [ngClass]="{ collapsed: isCollapsed }"
+      type="button"
+      data-bs-toggle="collapse"
+      aria-expanded="true"
+      aria-label="one"
+    >
+      {{ accordeonItem?.heading }}
+    </button>
+  </h2>
+  <div class="accordion-collapse collapse" [ngClass]="{ show: !isCollapsed }">
+    <div class="accordion-body">{{ accordeonItem?.body }}</div>
+  </div>
+</div>

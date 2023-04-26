@@ -1,14 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-accordion',
   templateUrl: './accordion.component.html',
   styleUrls: ['./accordion.component.css'],
 })
-export class AccordionComponent implements OnInit {
-  isCollapsedone = true;
-  isCollapsedtwo = true;
-  isCollapsedthree = true;
+export class AccordionComponent {
   termsAndConditions = [
     {
       id: 'one',
@@ -17,22 +14,13 @@ export class AccordionComponent implements OnInit {
     },
     {
       id: 'two',
-      heading: 'როდის და რა ფორმატით გაიმართება აქცია',
+      heading: 'როგორ მივიღო აქციაში მონაწილეობა',
       body: 'Egestas tellus rutrum tellus pellentesque. Nec feugiat in fermentum posuere urna nec tincidunt. Cras pulvinar mattis nunc sed blandit libero. Tortor aliquam nulla facilisi cras fermentum. ',
     },
     {
       id: 'three',
-      heading: 'როდის და რა ფორმატით გაიმართება აქცია',
+      heading: 'სხვადასხვა',
       body: 'Aliquam malesuada bibendum arcu vitae elementum. Urna neque viverra justo nec. Vitae tortor condimentum lacinia quis vel eros donec ac odio. Odio ut sem nulla pharetra diam sit amet. In fermentum posuere urna nec tincidunt praesent semper feugiat nibh. Molestie at elementum eu facilisis sed odio morbi quis commodo. Semper eget duis at tellus at. ',
     },
   ];
-  constructor() {}
-
-  ngOnInit(): void {}
-  show(event: any) {
-    const id = event.target.ariaLabel;
-    if (id === 'one') this.isCollapsedone = !this.isCollapsedone;
-    else if (id === 'two') this.isCollapsedtwo = !this.isCollapsedtwo;
-    else if (id === 'three') this.isCollapsedthree = !this.isCollapsedthree;
-  }
 }

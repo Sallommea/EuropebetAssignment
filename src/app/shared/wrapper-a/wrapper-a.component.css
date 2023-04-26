@@ -36,3 +36,14 @@
   border-bottom-left-radius: 11px;
   border-bottom-right-radius: 11px;
 }
+
+@media (max-width: 786px) {
+  .leaderboard {
+    padding: 0.5rem 0.5rem !important;
+    padding-bottom: 1.5rem;
+    background-color: #222526;
+  }
+  .wrapper-container {
+    padding: 0rem 0rem;
+  }
+}

@@ -1,16 +1,37 @@
 <app-wrapper-a>
-  <h3 class="pt-4 pb-4" heading>მისტიური გასაღები</h3>
+  <h3 class="pt-4 pb-4" heading>1₾ რეიკი = 1 ქულას</h3>
 
-  <h4>
+  <h4 class="top20leaderboard-margin">
     ჰოლდემის TOP20 ლიდერბორდი
     <img class="example-icon" src="assets/example-icon.png" alt="" />
   </h4>
 
-  <div class="row">
-    <app-leaderboard-table class="mb-2"></app-leaderboard-table>
+  <div class="container">
+    <app-leaderboard-table class="mb-2 no-margin"></app-leaderboard-table>
   </div>
 
   <div class="container">
     <app-prizes></app-prizes>
   </div>
+
+  <h4>
+    TOP20 ლიდერბორდი ჰოლდემში
+    <img class="example-icon" src="assets/example-icon.png" alt="" />
+  </h4>
+
+  <div class="container no-padding">
+    <app-leaderboard-table class="mb-2"></app-leaderboard-table>
+  </div>
+
+  <div class="container">
+    <app-prizes>
+      <p class="mb-3">
+        * ლიდერბორდის შედეგები განახლდება <a href="">პოკერის ლობიში</a>
+      </p>
+    </app-prizes>
+  </div>
 </app-wrapper-a>
+
+<div class="row mb-5 mt-5">
+  <app-wrapper-b></app-wrapper-b>
+</div>

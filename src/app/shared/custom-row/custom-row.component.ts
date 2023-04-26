@@ -5,10 +5,7 @@ import { Component, OnInit, Input } from '@angular/core';
   templateUrl: './custom-row.component.html',
   styleUrls: ['./custom-row.component.css'],
 })
-export class CustomRowComponent implements OnInit {
+export class CustomRowComponent {
   @Input() height: string = '70%';
   @Input() backgroundCustomColor = false;
-  constructor() {}
-  // background-color: #2f3535;
-  ngOnInit(): void {}
 }

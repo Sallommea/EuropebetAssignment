@@ -1,5 +1,7 @@
 <div class="container">
   <h1>ითამაშე მეტი სიამოვნებისთვის</h1>
-  <button class="btnn btn-start" (click)="openModal()">Poker Legends Philippines</button>
-  <app-modal *ngIf="showModal"></app-modal>
+  <button class="btnn btn-start" (click)="openModal()">
+    Poker Legends Philippines
+  </button>
+  <app-modal *ngIf="showModal" (close)="closeModal()"></app-modal>
 </div>

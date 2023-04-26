@@ -1,12 +1,10 @@
 .wrapper-container {
   position: relative;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem 1rem;
+  padding: 1rem 2rem;
   padding-bottom: 0.2rem;
   background-color: #232c2c;
+  text-align: center;
 }
 .line {
   width: 30%;
@@ -19,10 +17,17 @@
   box-shadow: 0 0rem 4rem 1rem rgba(242, 106, 56, 0.259);
 }
 
-h2 {
-  font-family: "mtavruli";
-}
-
 p {
-  font-size: 14px;
+  font-size: 1.4rem;
+}
+/* 784px */
+@media (max-width: 49em) {
+  h3 {
+    font-family: "HelveticaNeue";
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  p {
+    font-size: 1rem;
+  }
 }

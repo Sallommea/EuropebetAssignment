@@ -4,7 +4,6 @@
   background-color: beige;
 }
 h3 {
-  
   font-family: "Mtavruli";
 }
 
@@ -29,4 +28,25 @@ p {
 }
 a {
   color: rgba(240, 90, 34, 255);
+}
+h4 {
+  font-weight: 600;
+}
+@media (max-width: 58em) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 786px) {
+  .no-padding {
+    padding: 0 0 !important;
+  }
+  .no-margin {
+    margin: 0;
+  }
+
+  .top20leaderboard-margin {
+    margin-top: 1.5rem;
+  }
 }

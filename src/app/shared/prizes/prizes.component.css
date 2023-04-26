@@ -1,16 +1,17 @@
-.icondiv {
-  width: 1rem;
-  height: 1rem;
-  background-color: beige;
+img {
+  width: 2.5rem;
+  height: 2.5rem;
 }
-h2 {
-  font-weight: 600;
+a {
+  color: rgba(240, 90, 34, 255);
 }
 
 p {
+  font-family: "HelveticaNeue";
   margin-bottom: 0;
   line-height: 2rem;
 }
+
 .new-line {
   display: block;
 }
@@ -21,13 +22,13 @@ p {
   gap: 1rem;
   padding: 3rem 2rem;
 }
+.prizes-child {
+  flex: 1;
+}
 
 .example-icon {
   margin-left: 1rem;
   margin-bottom: 0.4rem;
-}
-a {
-  color: rgba(240, 90, 34, 255);
 }
 
 .flex-center {
@@ -36,4 +37,19 @@ a {
 
 .p-font-color {
   color: #ffffffa3;
+  text-align: center;
+}
+
+/* 928px */
+@media (max-width: 58em) {
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 786px) {
+  .prizes {
+    padding: 0.5rem 0.5rem;
+  }
+
 }

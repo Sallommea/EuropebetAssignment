@@ -1,40 +1,37 @@
 <div class="modal-backdrop fade show"></div>
-
-<div
-  class="modal"
-  id="exampleModal"
-  tabindex="-1"
-  aria-labelledby="exampleModalLabel"
-  aria-modal="true"
-  style="display: block"
-  role="dialoge"
->
+<div class="modal" id="exampleModal" tabindex="-1" style="display: block">
+  <div class="backdrop" (click)="onCloseModal()"></div>
   <div class="modal-dialog custom-size">
-    <div class="modal-header--sticky">
-      <div class="date">
-        <button class="date--slots-button">სლოტები</button>
-
-        <div class="date--period">10 იანვარი - 12 მარტი</div>
-      </div>
-      <div class="close-btn">
-        <img
-          src="assets/close-outline.svg"
-          alt="close modal"
-          class="icon"
-          (click)="onCloseModal()"
-        />
-      </div>
-    </div>
-
     <div class="modal-content animateShowModal">
-      <div class="div-banner">
-        <img src="assets/banner.jpg" alt="" class="banner" />
-      </div>
-
       <div class="modal-body">
+        <div class="container1 sign-up-container mb-1">
+          <img src="../../assets/logo.png" alt="" />
+          <div class="buttons">
+            <button class="sign-up-btn btnn">Sign up</button>
+            <div class="btnn">Sign in</div>
+          </div>
+        </div>
+        <div class="div-banner">
+          <img src="assets/banner.jpg" alt="" class="banner" />
+        </div>
+
         <div class="container1">
-          <div class="row mb-5">
-            <h3 class="mb-4">მოიპოვე 10 საგზურიდან ერთ-ერთი</h3>
+          <div class="row mb-5 heading">
+            <div class="modal-header--sticky">
+              <div class="date">
+                <button class="date--slots-button">სლოტები</button>
+
+                <div class="date--period">10 იანვარი - 12 მარტი</div>
+              </div>
+              <div class="close-btn" (click)="onCloseModal()">
+                <img
+                  src="assets/close-outline.svg"
+                  alt="close modal"
+                  class="icon"
+                />
+              </div>
+            </div>
+            <h4 class="mb-4">მოიპოვე 10 საგზურიდან ერთ-ერთი</h4>
             <p>მოხვდი პოკერის ფესტივალზე მალტაში</p>
           </div>
 
@@ -45,7 +42,6 @@
                 routerLinkActive="active"
                 [routerLinkActiveOptions]="{ exact: true }"
                 class="cash-games"
-                (click)="showComponent()"
                 ><span>1-29 აპრილი </span
                 ><span class="stage">Cash Games</span></a
               >
@@ -53,7 +49,6 @@
                 routerLink="springseries"
                 routerLinkActive="active"
                 class="spring-series"
-                (click)="showComponent()"
                 ><span>13-29 აპრილი</span>
                 <span class="stage">Spring Series</span></a
               >
@@ -61,31 +56,30 @@
                 routerLink="finalstage"
                 routerLinkActive="active"
                 class="final-stage"
-                (click)="hideComponent()"
                 ><span>30 აპრილი</span>
-                <span class="stage"> Final Stage</span></a
+                <span class="stage">Final Stage</span></a
               >
             </div>
           </div>
 
-          <router-outlet> </router-outlet>
+          <router-outlet></router-outlet>
 
-          <div class="row mb-5 mt-5" *ngIf="show">
-            <app-wrapper-b></app-wrapper-b>
-          </div>
           <div class="row mb-5">
             <app-accordion></app-accordion>
           </div>
-          <div class="row mb-5">
-            <app-carousel></app-carousel>
+        </div>
+        <div class="container1">
+          <h4 class="carousel-heading">მსგავსი აქციები</h4>
+        </div>
+        <div class="row carousel">
+          <app-carousel></app-carousel>
+        </div>
+        <footer class="footer">
+          <div class="background-color flex-center">
+            <button class="mb-5 mt-5 btnn">ითამაშე</button>
           </div>
-        </div>
+        </footer>
       </div>
-      <footer class="footer">
-        <div class="background-color flex-center">
-          <app-button class="mb-5 mt-5">ითამაშე</app-button>
-        </div>
-      </footer>
     </div>
   </div>
 </div>

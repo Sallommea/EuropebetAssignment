@@ -4,6 +4,8 @@
 }
 h3 {
   font-family: "Mtavruli";
+
+  text-align: center;
 }
 
 .line {
@@ -61,6 +63,13 @@ h3 {
   right: 0;
   bottom: 0;
 }
+
+.full-schedule-tournament {
+  display: none;
+}
+a {
+  color: rgba(240, 90, 34, 255);
+}
 span {
   font-size: 14px;
   font-weight: 600;
@@ -89,49 +98,74 @@ span {
   right: -2.8rem;
   height: 4.5rem;
 }
+/* Tournament section */
 
-.tournament-img {
-  background-image: url("../../assets/tournament-bg2.png");
-  width: 39.5rem;
-  height: 11rem;
-  background-repeat: no-repeat;
+.wrapper-simple {
+  padding: 1rem 1.5rem;
+}
+.row1 {
+  width: 100%;
+  gap: 2rem;
+}
+.col1 {
+  width: 100%;
+}
+.image-container img {
+  width: 100%;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-overlay {
+  position: absolute;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.image-overlay-bg {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.description-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2rem;
 }
-
-.tournament-img-bg {
-  background-image: url("../../assets/main-bg.png");
-  width: 80.7rem;
-  height: 11rem;
-  background-repeat: no-repeat;
+.description-sm-cont {
+  width: 30rem;
+}
+.description-bg-cont {
+  width: 30rem;
+}
+.description-first {
+  text-align: center;
+}
+.description-second {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5rem;
+  text-align: center;
 }
-.row > * {
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.start {
-  margin-left: 3rem;
-}
-.end {
-  margin-right: 8rem;
-  display: flex;
-}
-.end-bg {
-  margin-right: 8rem;
-  display: flex;
-}
-
 .tournament-date {
   background-color: #b47c3c;
   padding: 0.5rem 2rem;
   border-radius: 11px;
   border-bottom-right-radius: 0;
+}
+
+.description-first h2 {
+  color: #f3b507;
+  font-weight: 700;
+}
+
+.description-bg-second {
+  display: flex;
+  z-index: 0;
+  text-align: center;
 }
 .tournament-date-bg {
   background-color: #cec461;
@@ -140,7 +174,9 @@ span {
   border-bottom-right-radius: 0;
   color: #245b42;
 }
-
+.display {
+  display: none;
+}
 h4 {
   margin-bottom: 0;
   font-weight: 600;
@@ -153,14 +189,104 @@ h5 {
   justify-content: center;
 }
 
-.start h2 {
-  color: #f3b507;
-  font-weight: 700;
+.text-centered {
+  text-align: center;
 }
-
 .main-events h2 {
   font-weight: 700;
 }
 .main-events-color {
   color: #f3b507;
+}
+
+@media (max-width: 918px) {
+  .small-text {
+    font-size: 1.2rem;
+  }
+  .bold-text {
+    font-weight: 600;
+  }
+  .no-bold {
+    font-weight: 400;
+  }
+  .md-text {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 12px;
+  }
+  .description-sm-cont {
+    gap: 3rem;
+    width: 22rem;
+  }
+}
+
+@media (max-width: 675px) {
+  .p-font-color {
+    display: none;
+  }
+  .padding {
+    padding: 1rem 6rem;
+  }
+  .poker-btn {
+    display: none;
+  }
+
+  .promo-left-img {
+    width: 11rem;
+    height: 7.5rem;
+  }
+
+  .promo-right-img {
+    position: absolute;
+    width: 11rem;
+    height: 7.5rem;
+  }
+
+  .full-schedule-tournament {
+    display: flex;
+    padding: 2rem 2rem;
+    background-color: #232c2c;
+    text-align: center;
+  }
+  .tournament-p {
+    font-size: 1.2rem;
+    color: #ffffffd8;
+  }
+  .poker-lobby-btn {
+    font-size: 1.2rem;
+    padding: 1rem 1rem;
+    font-weight: 600;
+  }
+  .row1 {
+    flex-direction: column;
+  }
+  .image-container img {
+    height: 10rem;
+  }
+  .img-sm {
+    display: none;
+  }
+  .display {
+    display: block;
+    height: 8rem;
+  }
+  .image-overlay {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .description-sm-cont {
+    gap: 1rem;
+    width: 28rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .description-sm-cont {
+    width: 20rem;
+  }
+  .description-bg-cont {
+    width: 20rem;
+  }
 }
