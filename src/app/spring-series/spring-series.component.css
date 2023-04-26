@@ -103,11 +103,11 @@ span {
 .wrapper-simple {
   padding: 1rem 1.5rem;
 }
-.row1 {
+.tournament-section-row {
   width: 100%;
   gap: 2rem;
 }
-.col1 {
+.col-tournament {
   width: 100%;
 }
 .image-container img {
@@ -258,7 +258,7 @@ h5 {
     padding: 1rem 1rem;
     font-weight: 600;
   }
-  .row1 {
+  .tournament-section-row {
     flex-direction: column;
   }
   .image-container img {

@@ -39,8 +39,8 @@
   top: 3rem;
   left: 1rem;
   right: 2rem;
-  background-color: transparent; /* [1] */
-  z-index: 1056; /* [2] */
+  background-color: transparent;
+  z-index: 1056;
 }
 .date {
   display: flex;
@@ -240,6 +240,9 @@ p {
   margin-bottom: 15rem;
 }
 
+.date-display-sm {
+  display: none;
+}
 @media (max-width: 81em) {
   .modal-dialog.custom-size {
     max-width: 99rem;
@@ -280,13 +283,11 @@ p {
     background-color: #1c1d1e;
   }
   .modal-body {
-    /* height: calc(100% - 56px); */
     height: 100%;
     width: 100%;
     overflow-y: auto;
   }
   .modal-dialog.custom-size {
-    /* max-width: 99rem; */
     width: 100%;
   }
   .modal-backdrop {
@@ -359,9 +360,20 @@ p {
   .div-banner {
     padding-bottom: 1rem;
   }
+  .date-display-sm {
+    display: inline-block;
+  }
+
+  .date-display {
+    display: none;
+  }
+
+  .tab-bar span {
+    font-size: 10px;
+  }
 }
 
 ::-webkit-scrollbar {
-  width: 0.1vw; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
+  width: 0.1vw;
+  background: transparent;
 }

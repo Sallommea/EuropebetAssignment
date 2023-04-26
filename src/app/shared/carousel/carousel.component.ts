@@ -12,10 +12,6 @@ export class CarouselComponent {
     { id: 'image2', imageLink: '../../../assets/ad.png' },
     { id: 'image3', imageLink: '../../../assets/jackpot-ad.png' },
     { id: 'image4', imageLink: '../../../assets/ad1.PNG' },
-    // { id: 'image5', imageLink: '../../../assets/ad1.PNG' },
-    // { id: 'image6', imageLink: '../../../assets/ad.png' },
-    // { id: 'image7', imageLink: '../../../assets/jackpot-ad.png' },
-    // { id: 'image8', imageLink: '../../../assets/ad1.PNG' },
   ];
 
   items: any[] | undefined;
