@@ -1,3 +1,35 @@
 .btn-start {
   padding: 4rem 5rem;
+  margin-top: 10rem;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ml {
+  margin-left: 1rem;
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffffbe;
+  font-weight: 500;
+  font-size: 1.8rem;
+}
+
+h4 {
+  margin-top: 1rem;
 }

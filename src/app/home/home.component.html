@@ -1,7 +1,22 @@
 <div class="container">
-  <h1>ითამაშე მეტი სიამოვნებისთვის</h1>
-  <button class="btnn btn-start" (click)="openModal()">
-    Poker Legends Philippines
-  </button>
+  <div class="flex-between">
+    <div class="flex-center">
+      <img src="../../assets/logo.png" alt="logo" />
+      <h1 class="ml">Europabet</h1>
+      <nav class="main-nav ml">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">ლაივი</a></li>
+          <li><a class="main-nav-link" href="#">სლოტები</a></li>
+          <li><a class="main-nav-link" href="#">კაზინო</a></li>
+        </ul>
+      </nav>
+    </div>
+    <h4>ითამაშე მეტი სიამოვნებისთვის</h4>
+  </div>
+  <div class="container flex-center">
+    <button class="btnn btn-start" (click)="openModal()">
+      Poker Legends Philippines
+    </button>
+  </div>
   <app-modal *ngIf="showModal" (close)="closeModal()"></app-modal>
 </div>

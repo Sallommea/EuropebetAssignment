@@ -8,6 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent {
   showModal = false;
 
+  constructor() {
+    const mediaQuery = window.matchMedia('(max-width: 786px)');
+    this.showModal = mediaQuery.matches;
+  }
+
   openModal() {
     this.showModal = true;
   }
